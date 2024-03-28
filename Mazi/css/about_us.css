@@ -260,6 +260,45 @@ html, #body{
     height: 100%;
 }
 
+
+#contact_us_btn{
+    width: 140px;
+    height: 140px;
+    line-height: 120px;
+    background-color: #0b1a2e;
+    z-index: 999;
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    border-radius: 80px;
+    font-size: 23px;
+    color: #ffffff;
+    align-items: center;
+    border: 7px solid #ffffff;
+    
+}
+
+#contact_us_btn:hover{
+    cursor: pointer;
+    background-color: #0b1f6e; 
+    border: 7px solid #ffffff;
+    transition: 0.5s;
+    box-shadow: inset 0px 0px 3px 3px white;
+   
+}
+/* background-color: #0b1f6e;
+    border: 7px solid #ffffff; */
+#contact_us_image{
+    width: 80px;
+    height: 80px;
+  margin: 27px 15px 0px 32px;
+    
+}
+
+/* 문의하기 */
+
+
 @media (max-width: 1400px){
     #Select_Bar>div{
         margin-left: 160px;
