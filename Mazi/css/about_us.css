@@ -299,7 +299,7 @@ html, #body{
 /* 문의하기 */
 
 
-@media (max-width: 1400px){
+@media (max-width: 1000px){
     #Select_Bar>div{
         margin-left: 160px;
     }
@@ -315,4 +315,7 @@ html, #body{
     .SecondLine{
         font-size: 15px;
     }
+}
+@media (max-width: 700px){
+    
 }
