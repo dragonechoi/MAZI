@@ -11,7 +11,6 @@
 
     $stmt = mysqli_prepare($db, $sql);
     mysqli_stmt_bind_param($stmt, "sd", $category, $c_no);
-    // mysqli_stmt_bind_param($stmt, "s", $table);
     mysqli_stmt_execute($stmt);
 
     $result = mysqli_stmt_get_result($stmt);

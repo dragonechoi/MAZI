@@ -2,18 +2,20 @@ $(document).ready(function() {
     init();
 });
 
-
 function init() {
-    $('.header>div').click(function() {
-        
-        removedisplay();
+    $('.type>div').click(function() {
+        classinit();
+        $(this).addClass('selected');
         var clicked = $(this).text();
-        
         $(`.form.${clicked}`).removeClass('display_none');
     });
 }
 
-function removedisplay() {
+function classinit() {
+    $('.type>div').each(function(index, element) {
+        $(this).removeClass('selected');
+    });
+
     $('.form').each(function(index, element) {
         $(this).addClass('display_none');
     });

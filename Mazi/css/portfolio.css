@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: SansTTFBold;
-    src: url(../font/GmarketSansTTFBold.ttf);
+    src: url(../Font/GmarketSansTTFBold.ttf);
 }
 @font-face {
     font-family: SansTTFMedium;
-    src: url(../font/GmarketSansTTFMedium.ttf);
+    src: url(../Font/GmarketSansTTFMedium.ttf);
 }
 @font-face {
     font-family: SansTTFLight;
-    src: url(../font/GmarketSansTTFLight.ttf);
+    src: url(../Font/GmarketSansTTFLight.ttf);
 }
 @font-face {
     font-family: NanumGothic;
-    src: url(../font/NanumGothic.ttf);
+    src: url(../Font/NanumGothic.ttf);
 }
 
 /* 자주쓰는 스타일 선언 */
@@ -30,8 +30,6 @@
 /* 문서 영역 스타일 */
 
 html, body{
-    
-    /* background-color: #D5DCEE; */
     margin: 0px;
     font-family: SansTTFMedium;
 }
@@ -39,32 +37,6 @@ html, body{
 .header, .container {
     min-width: 1500px;
 }
-
-/* 네이게이션바 */
-
-/* .header {
-    width: 100%;
-    height: 120px;
-    background-color: #FFFFFF;
-    justify-content: space-between;
-}
-
-#logoimg {
-    margin: 30px 0px 15px 100px;
-}
-
-.Button_wrap {
-    align-self: center;
-    margin: 0px 20% 0px 0px;
-    font-family: SansTTFBold;
-    color: #0F2746;
-    font-size: 20px;
-}
-
-.Button {
-    margin: 0px 0px 0px 100px;
-    cursor: pointer;
-} */
 
 /* 컨테이너 영역 */
 
@@ -74,10 +46,11 @@ html, body{
     width: 100%;
     /* margin-top: 50px; */
     padding: 70px 0px 70px 0px;
+    /* background-color: #d5dced; */
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../image/portfolio/portfolio_backgound_img.png);
+    background-image: url(../Image/portfolio/portfolio_backgound_img.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,15 +90,15 @@ html, body{
 } /* 이미지 공통 설정 */
 
 .item_img.img_index_1 {
-    background-image: url(../image/portfolio/portfolio_Android.png);
+    background-image: url(../Image/portfolio/portfolio_Android.png);
 }
 
 .item_img.img_index_2 {
-    background-image: url(../image/portfolio/portfolio_Web.png);
+    background-image: url(../Image/portfolio/portfolio_Web.png);
 }
 
 .item_img.img_index_3 {
-    background-image: url(../image/portfolio/portfolio_Promotion.png);
+    background-image: url(../Image/portfolio/portfolio_Promotion.png);
 }
 
 .item_img, .item_captions {
@@ -178,7 +151,7 @@ html, body{
     background-color: #FFFFFF;
     display: flex;
     flex-flow: column;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2); */
     /* min-width: ;
     min-height: ; */
@@ -212,7 +185,7 @@ html, body{
 }
 
 .page_close {
-    display: flex; position: fixed; top: 3%; right: 5%;
+    display: flex; position: relative; top: 3%; right: 5%;
     font-size: 50px;
     cursor: pointer;
     color: #434343;
@@ -229,7 +202,6 @@ html, body{
     display: flex;
     flex-flow: column;
     width: 75%; height: 100%;
-    /* background-color: #D6D6D6; */
 }
 
 /* 메인 프레임 부분 */
@@ -241,15 +213,15 @@ html, body{
 .button_before, .button_after {
     display: flex;
     width: 20%; height: 100%;
-    /* border: 1px solid black; */
     align-items: center;
     justify-content: center;
 }
 
 .button_before>div, .button_after>div {
-    background-image: url(../image/portfolio/portfolio_arrow.png);
+    background-image: url(../Image/portfolio/portfolio_arrow.png);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 60%;
 }
 
 .button_before {
@@ -258,7 +230,7 @@ html, body{
 
 .button_before>div:hover, .button_after>div:hover {
     background-color: #434343;
-    background-image: url(../image/portfolio/portfolio_arrow_w.png);
+    background-image: url(../Image/portfolio/portfolio_arrow_w.png);
 }
 
 .button_before>div, .button_after>div {
